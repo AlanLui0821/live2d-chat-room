@@ -1,0 +1,23 @@
+{
+       "env": {
+         "browser": true,
+         "es2021": true,
+         "node": true
+       },
+       "extends": [
+         "next/core-web-vitals",
+         "plugin:@typescript-eslint/recommended"
+       ],
+       "parser": "@typescript-eslint/parser",
+       "plugins": ["@typescript-eslint"],
+       "rules": {
+         "import/no-unresolved": "off"
+       },
+       "settings": {
+         "import/resolver": {
+           "node": {
+             "paths": ["public"]
+           }
+         }
+       }
+     }
